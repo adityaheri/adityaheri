@@ -1,0 +1,537 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:black;
+	font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1><a name="_Toc115096548">MEMBUAT WEBSITE</a> </h1>
+
+<p class=MsoNormal><a name="_Toc115096549"><span class=Heading2Char><span
+style='font-size:13.0pt;line-height:107%'>1. Menyiapkan Web Server</span></span></a><br>
+Kita memerlukan sebuah server untuk menjalankan website. Saya menggunakan
+virtual machine dengan os ubuntu 64-bit sebagai server. Virtual machine ini
+saya jalankan dengan software vmware</p>
+
+<p class=MsoNormal><a name="_Toc115096550"><span class=Heading2Char><span
+style='font-size:13.0pt;line-height:107%'>2. Lakukan Update pada Ubuntu</span></span></a>
+<br>
+Pertama-tama, jalankan perintah pembaruan sistem untuk memastikan semua paket dapat
+diinstall dengan lancar dan juga cache indeks paket APT dalam keadaan terbaru.</p>
+
+<p class=MsoNormal><img width=295 height=25 id="Picture 1"
+src="KEAMANAN%20BASIS%20DATA_files/image001.png"></p>
+
+<p class=MsoNormal><a name="_Toc115096551"><span class=Heading2Char><span
+style='font-size:13.0pt;line-height:107%'>3. Menginstall Apace</span></span></a>
+<br>
+Kita membutuhkan web server Apache dan bahasa pemrograman PHP untuk setting CMS
+WordPress</p>
+
+<p class=MsoNormal><img width=218 height=32 id="Picture 3"
+src="KEAMANAN%20BASIS%20DATA_files/image002.png"></p>
+
+<p class=MsoNormal>Setelah proses instalasi selesai , selanjutnya kita enable
+apache2</p>
+
+<p class=MsoNormal><img width=264 height=24 id="Picture 4"
+src="KEAMANAN%20BASIS%20DATA_files/image003.png"></p>
+
+<p class=MsoNormal>Lalu kita cek apakah apache2 sudah terinstall di ubuntu kita</p>
+
+<p class=MsoNormal><img width=254 height=25 id="Picture 6"
+src="KEAMANAN%20BASIS%20DATA_files/image004.png"></p>
+
+<p class=MsoNormal>Jika sudah terinstall seharusnya akan muncul tampilan
+seperti berikut</p>
+
+<p class=MsoNormal><img width=469 height=229 id="Picture 5"
+src="KEAMANAN%20BASIS%20DATA_files/image005.png"></p>
+
+<h2><a name="_Toc115096552"><strong><span style='font-family:"Calibri Light",sans-serif;
+font-weight:normal'>4. Install PHP version 8</span></strong></a></h2>
+
+<p class=MsoNormal>Versi default PHP tersedia untuk diinstal menggunakan
+repositori standar Ubuntu 22.04 LTS. Oleh karena itu, cukup jalankan perintah
+yang diberikan untuk menginstal PHP dan ekstensi yang diperlukan pada sistem
+Anda.</p>
+
+<p class=MsoNormal><img width=367 height=20 id="Picture 7"
+src="KEAMANAN%20BASIS%20DATA_files/image006.png"></p>
+
+<p class=MsoNormal>Untuk memeriksa versi setelah menyelesaikan perintah di
+atas, gunakan:</p>
+
+<p class=MsoNormal><img width=77 height=24 id="Picture 8"
+src="KEAMANAN%20BASIS%20DATA_files/image007.png"></p>
+
+<h2><a name="_Toc115096553">5. Install mysql</a></h2>
+
+<p class=MsoNormal>Karna kita menggunakan vm ini sebagai database sekaligus
+webserver kita memerlukan mysql-client sekaligus mysql-server, maka gunakan
+perintah sebagai berikut</p>
+
+<p class=MsoNormal><img width=360 height=23 id="Picture 10"
+src="KEAMANAN%20BASIS%20DATA_files/image008.png"></p>
+
+<p class=MsoNormal>Enable mysql</p>
+
+<p class=MsoNormal><img width=281 height=24 id="Picture 11"
+src="KEAMANAN%20BASIS%20DATA_files/image009.png"></p>
+
+<p class=MsoNormal>Lalu kita cek apakah mysql sudah terinstall di ubuntu kita</p>
+
+<p class=MsoNormal><img width=252 height=17 id="Picture 12"
+src="KEAMANAN%20BASIS%20DATA_files/image010.png"></p>
+
+<p class=MsoNormal>Seharusnya akan muncul tampilan seperti dibawah</p>
+
+<p class=MsoNormal><img width=476 height=253 id="Picture 13"
+src="KEAMANAN%20BASIS%20DATA_files/image011.png"></p>
+
+<h2><a name="_Toc115096554">6. Membuat Database</a></h2>
+
+<p class=MsoNormal><img width=97 height=18 id="Picture 14"
+src="KEAMANAN%20BASIS%20DATA_files/image012.png"></p>
+
+<p class=MsoNormal>Lalu ketik perintah sebagai berikut:</p>
+
+<p class=MsoNormal>Untuk membuat server gunakan create user</p>
+
+<p class=MsoNormal><img width=553 height=25 id="Picture 51"
+src="KEAMANAN%20BASIS%20DATA_files/image013.png"></p>
+
+<p class=MsoNormal>Untuk membuat database gunakan create database</p>
+
+<p class=MsoNormal><img width=253 height=24 id="Picture 55"
+src="KEAMANAN%20BASIS%20DATA_files/image014.png"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Untuk memberikan izin terhadap database yang kita buat
+gunakan grant all privileges</p>
+
+<p class=MsoNormal><img width=531 height=21 id="Picture 56"
+src="KEAMANAN%20BASIS%20DATA_files/image015.png"></p>
+
+<p class=MsoNormal>Gunakan FLUSH PRIVILEGES untuk memerintahkan kepada sistem
+untuk membaca ulang kelima grant tables tanpa harus merestart server mysql</p>
+
+<p class=MsoNormal><img width=189 height=19 id="Picture 58"
+src="KEAMANAN%20BASIS%20DATA_files/image016.png"></p>
+
+<h2><a name="_Toc115096555">7. Menginstall wordpress</a></h2>
+
+<p class=MsoNormal>Untuk menggunakan fungsi wget dan unzip kita perlu
+menginstall package terlebih dahulu</p>
+
+<p class=MsoNormal><img width=221 height=24 id="Picture 60"
+src="KEAMANAN%20BASIS%20DATA_files/image017.png"></p>
+
+<p class=MsoNormal>Download file wordpress</p>
+
+<p class=MsoNormal><img width=299 height=16 id="Picture 61"
+src="KEAMANAN%20BASIS%20DATA_files/image018.png"></p>
+
+<p class=MsoNormal>Extract zip file wordpress</p>
+
+<p class=MsoNormal><img width=174 height=18 id="Picture 62"
+src="KEAMANAN%20BASIS%20DATA_files/image019.png"></p>
+
+<p class=MsoNormal>Pindahkan folder wordpress</p>
+
+<p class=MsoNormal><img width=268 height=19 id="Picture 63"
+src="KEAMANAN%20BASIS%20DATA_files/image020.png"></p>
+
+<p class=MsoNormal>Berikan file permission</p>
+
+<p class=MsoNormal><img width=451 height=20 id="Picture 64"
+src="KEAMANAN%20BASIS%20DATA_files/image021.png"></p>
+
+<p class=MsoNormal><img width=338 height=16 id="Picture 65"
+src="KEAMANAN%20BASIS%20DATA_files/image022.png"></p>
+
+<h2><a name="_Toc115096556">8. Konfigurasi apache pada ubuntu</a></h2>
+
+<p class=MsoNormal>Buat file konfigurasi wordpress</p>
+
+<p class=MsoNormal><img width=434 height=21 id="Picture 66"
+src="KEAMANAN%20BASIS%20DATA_files/image023.png"></p>
+
+<p class=MsoNormal><img width=391 height=341 id="Picture 69"
+src="KEAMANAN%20BASIS%20DATA_files/image024.jpg"
+alt="Text&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>Gunakan a2ensite untuk mengaktifkan konfigurasi VirtualHost
+yang telah kita buat di dalam direktori &quot;apache&quot; server linux kita</p>
+
+<p class=MsoNormal><img width=229 height=18 id="Picture 68"
+src="KEAMANAN%20BASIS%20DATA_files/image025.png"></p>
+
+<p class=MsoNormal>Enable rewrite module</p>
+
+<p class=MsoNormal><img width=160 height=19 id="Picture 70"
+src="KEAMANAN%20BASIS%20DATA_files/image026.png"></p>
+
+<p class=MsoNormal>Disable apache test page</p>
+
+<p class=MsoNormal><img width=250 height=20 id="Picture 71"
+src="KEAMANAN%20BASIS%20DATA_files/image027.png"></p>
+
+<p class=MsoNormal>Restart apache</p>
+
+<p class=MsoNormal><img width=247 height=19 id="Picture 72"
+src="KEAMANAN%20BASIS%20DATA_files/image028.png"></p>
+
+<br clear=all style='page-break-before:always'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc115096557">9. Setup Wordpress</a></h2>
+
+<p class=MsoNormal>Buka ip address vm pada browser anda, maka akan muncul
+tampilan seperti berikut</p>
+
+<p class=MsoNormal><img width=523 height=487 id="Picture 30"
+src="KEAMANAN%20BASIS%20DATA_files/image029.png"
+alt="Graphical user interface, text, application&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><img width=456 height=329 id="Picture 31"
+src="KEAMANAN%20BASIS%20DATA_files/image030.jpg"
+alt="Graphical user interface, text, application, email, Teams&#10;&#10;Description automatically generated"> Saat
+kita menekan tombol “Let’s go!” maka akan membuat file wp-config yg berisi
+informasi database kita </p>
+
+<p class=MsoNormal><img width=608 height=403 id="Picture 33"
+src="KEAMANAN%20BASIS%20DATA_files/image031.png"
+alt="Graphical user interface&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>Database Name : database yg tadi kita buat<br>
+Username : username dari user yg tadi kita buat<br>
+Password : password user yg tadi kita buat</p>
+
+<p class=MsoNormal>Setelah kita klik “submit” akan muncul tampilan seperti
+berikut</p>
+
+<p class=MsoNormal><img width=603 height=289 id="Picture 34"
+src="KEAMANAN%20BASIS%20DATA_files/image032.png"
+alt="Graphical user interface, application, Teams&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>Klik run the installation</p>
+
+<p class=MsoNormal>Buat admin user</p>
+
+<p class=MsoNormal><img width=505 height=391 id="Picture 35"
+src="KEAMANAN%20BASIS%20DATA_files/image033.jpg"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Login dengan akun admin</p>
+
+<p class=MsoNormal><img width=496 height=425 id="Picture 36"
+src="KEAMANAN%20BASIS%20DATA_files/image034.png"></p>
+
+<p class=MsoNormal>Wordpress berhasil dibuat</p>
+
+<p class=MsoNormal><img width=624 height=301 id="Picture 37"
+src="KEAMANAN%20BASIS%20DATA_files/image035.png"></p>
+
+<br clear=all style='page-break-before:always'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc115096558"><span class=Heading1Char>Membuat 3 buah wordpress
+dengan database terpisah</span></a></h1>
+
+<p class=MsoNormal><img width=624 height=351 id="Picture 47"
+src="KEAMANAN%20BASIS%20DATA_files/image036.png"
+alt="Diagram&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><a name="_Toc115096559"><span class=Heading2Char><span
+style='font-size:13.0pt;line-height:107%'>1. Menginstall apache pada webserver</span></span></a><span
+class=Heading2Char><span style='font-size:13.0pt;line-height:107%'> </span></span><img
+width=623 height=262 id="Picture 9"
+src="KEAMANAN%20BASIS%20DATA_files/image037.png"
+alt="Text&#10;&#10;Description automatically generated"></p>
+
+<h2><a name="_Toc115096560">2. Menginstall mysql-client pada webserver dan
+mysql server pada database</a></h2>
+
+<p class=MsoNormal><img width=623 height=323 id="Picture 2"
+src="KEAMANAN%20BASIS%20DATA_files/image038.png"></p>
+
+<h2><a name="_Toc115096561">3. Menginstall php pada webserver</a></h2>
+
+<p class=MsoNormal><img width=517 height=419 id="Picture 32"
+src="KEAMANAN%20BASIS%20DATA_files/image039.png"
+alt="Text&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc115096562">4. Mendownload wordpress pada webserver kemudian di
+extract pada web folder</a></h2>
+
+<p class=MsoNormal><img width=299 height=16 id="Picture 73"
+src="KEAMANAN%20BASIS%20DATA_files/image018.png"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc115096563">5. Membuat file konfigurasi untuk wordpress</a></h2>
+
+<p class=MsoNormal>Buat file konfigurasi wordpress</p>
+
+<p class=MsoNormal><img width=434 height=21 id="Picture 75"
+src="KEAMANAN%20BASIS%20DATA_files/image023.png"></p>
+
+<p class=MsoNormal><img width=391 height=341 id="Picture 76"
+src="KEAMANAN%20BASIS%20DATA_files/image040.jpg"
+alt="Text&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>Gunakan a2ensite untuk mengaktifkan konfigurasi VirtualHost
+yang telah kita buat di dalam direktori &quot;apache&quot; server linux kita</p>
+
+<p class=MsoNormal><img width=229 height=18 id="Picture 77"
+src="KEAMANAN%20BASIS%20DATA_files/image025.png"></p>
+
+<p class=MsoNormal>Enable rewrite module</p>
+
+<p class=MsoNormal><img width=160 height=19 id="Picture 78"
+src="KEAMANAN%20BASIS%20DATA_files/image026.png"></p>
+
+<p class=MsoNormal>Disable apache test page</p>
+
+<p class=MsoNormal><img width=250 height=20 id="Picture 79"
+src="KEAMANAN%20BASIS%20DATA_files/image027.png"></p>
+
+<p class=MsoNormal>Restart apache</p>
+
+<p class=MsoNormal><img width=247 height=19 id="Picture 80"
+src="KEAMANAN%20BASIS%20DATA_files/image028.png"></p>
+
+<h2><a name="_Toc115096564">6. Buat 2 virtual machine webserver</a> </h2>
+
+<p class=MsoNormal>dengan konfigurasi yg sama, kemudian buat 3 user pada mysql
+database dengan masing2 localhost sesuai dengan 3 vm webserver yg sudah kita
+buat <img width=376 height=21 id="Picture 82"
+src="KEAMANAN%20BASIS%20DATA_files/image041.png"></p>
+
+<p class=MsoNormal><img width=385 height=19 id="Picture 83"
+src="KEAMANAN%20BASIS%20DATA_files/image042.jpg"></p>
+
+<p class=MsoNormal><img width=376 height=19 id="Picture 85"
+src="KEAMANAN%20BASIS%20DATA_files/image043.png"></p>
+
+<h2><a name="_Toc115096565">7. Kemudian buat 3 database untuk 3 wordpress</a></h2>
+
+<p class=MsoNormal><img width=186 height=218 id="Picture 42"
+src="KEAMANAN%20BASIS%20DATA_files/image044.jpg"
+alt="Text&#10;&#10;Description automatically generated">masing2 user memiliki
+privileges pada wordpress yg berbeda</p>
+
+<p class=MsoNormal>Lalu kita berikan privileges pada masing2 user untuk setiap
+database wordpress</p>
+
+<p class=MsoNormal><img width=612 height=20 id="Picture 86"
+src="KEAMANAN%20BASIS%20DATA_files/image045.png"></p>
+
+<p class=MsoNormal><img width=616 height=24 id="Picture 87"
+src="KEAMANAN%20BASIS%20DATA_files/image046.png"></p>
+
+<p class=MsoNormal><img width=618 height=21 id="Picture 88"
+src="KEAMANAN%20BASIS%20DATA_files/image047.png"></p>
+
+<p class=MsoNormal><a name="_Toc115096566"><span class=Heading2Char><span
+style='font-size:13.0pt;line-height:107%'>8. Mengisi form pada setiap wordpress
+yg berbeda</span></span></a> <img width=537 height=349 id="Picture 43"
+src="KEAMANAN%20BASIS%20DATA_files/image048.jpg"
+alt="Graphical user interface&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>WORDPRESS 1</p>
+
+<p class=MsoNormal>Database Name : wordpress_1<br>
+Username : server1<br>
+Password : (kosongkan karna kita tidak membuat password pada user mysql)<br>
+Database Host : 192.168.107.133</p>
+
+<p class=MsoNormal>WORDPRESS 2</p>
+
+<p class=MsoNormal>Database Name : wordpress_2<br>
+Username : server2<br>
+Password : (kosongkan karna kita tidak membuat password pada user mysql)<br>
+Database Host : 192.168.107.134</p>
+
+<p class=MsoNormal>WORDPRESS 3</p>
+
+<p class=MsoNormal>Database Name : wordpress_3<br>
+Username : server3<br>
+Password : (kosongkan karna kita tidak membuat password pada user mysql)<br>
+Database Host : 192.168.107.135</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc115096567">9. Hasil</a> </h2>
+
+<p class=MsoNormal><img width=623 height=318 id="Picture 44"
+src="KEAMANAN%20BASIS%20DATA_files/image049.png"
+alt="A picture containing graphical user interface&#10;&#10;Description automatically generated">website
+1</p>
+
+<p class=MsoNormal><img width=623 height=314 id="Picture 45"
+src="KEAMANAN%20BASIS%20DATA_files/image050.png"
+alt="Graphical user interface, text, application, website&#10;&#10;Description automatically generated">website
+2</p>
+
+<p class=MsoNormal><img width=623 height=313 id="Picture 46"
+src="KEAMANAN%20BASIS%20DATA_files/image051.png"
+alt="Graphical user interface, text&#10;&#10;Description automatically generated">website
+3</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<br clear=all style='page-break-before:always'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc115096568">PERBEDAAN UNION, SELECT, WAIT(SLEEP) DAN --</a></h1>
+
+<h2><a name="_Toc115096569">1. UNION</a></h2>
+
+<p class=MsoNormal>Berfungsi untuk menambahkan baris dari satu table ke table
+lain</p>
+
+<p class=MsoNormal>Sebelum melakukan union</p>
+
+<p class=MsoNormal><img width=251 height=117 id="Picture 52"
+src="KEAMANAN%20BASIS%20DATA_files/image052.png"
+alt="Text&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>Setelah kita melakukan union pada kolom nama</p>
+
+<p class=MsoNormal><img width=306 height=52 id="Picture 49"
+src="KEAMANAN%20BASIS%20DATA_files/image053.png"
+alt="Graphical user interface, text&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><img width=243 height=146 id="Picture 50"
+src="KEAMANAN%20BASIS%20DATA_files/image054.png"
+alt="Text&#10;&#10;Description automatically generated with medium confidence"></p>
+
+<h2><a name="_Toc115096570">2. SELECT</a></h2>
+
+<p class=MsoNormal>Select berfungsi menseleksi pilihan </p>
+
+<p class=MsoNormal><img width=226 height=132 id="Picture 53"
+src="KEAMANAN%20BASIS%20DATA_files/image055.jpg"
+alt="Text&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>jika kita select nama from mahasiswa maka hanya akan
+menampilkan kolom nama dari table</p>
+
+<p class=MsoNormal><img width=226 height=120 id="Picture 54"
+src="KEAMANAN%20BASIS%20DATA_files/image056.jpg"></p>
+
+<h2><a name="_Toc115096571">3. WAIT / SLEEP</a></h2>
+
+<p class=MsoNormal>Wait berfungsi untuk memberhentikan database sesuai waktu yg
+kita inginkan</p>
+
+<p class=MsoNormal>Berikut contoh jika kita melakukan perintah “do sleep(10);
+select …” sistem akan berhenti selama 10 detik sebelum melakukan select <br>
+<img width=369 height=180 id="Picture 57"
+src="KEAMANAN%20BASIS%20DATA_files/image057.png"
+alt="Text&#10;&#10;Description automatically generated"></p>
+
+<h2><a name="_Toc115096572">4.  --</a></h2>
+
+<p class=MsoNormal>-- (double dash) berfungsi untuk melakukan comment, layaknya
+“#” di python dan “&lt;!-- &gt;” di html, fungsi ini tidak melakukan apa pun
+selain menampilkan karakter yg kita ketik<br>
+<img width=172 height=19 id="Picture 59"
+src="KEAMANAN%20BASIS%20DATA_files/image058.png"></p>
+
+</div>
+
+</body>
+
+</html>
